@@ -1,7 +1,10 @@
+<<<<<<< HEAD
 
 # Created by https://www.gitignore.io/api/node,bower
 
 ### Node ###
+=======
+>>>>>>> f6482305b0758e9a4b64b0a86ff336bb9def3446
 # Logs
 logs
 *.log
@@ -35,6 +38,7 @@ node_modules
 
 # Optional REPL history
 .node_repl_history
+<<<<<<< HEAD
 
 
 ### Bower ###
@@ -42,3 +46,5 @@ bower_components
 .bower-cache
 .bower-registry
 .bower-tmp
+=======
+>>>>>>> f6482305b0758e9a4b64b0a86ff336bb9def3446
