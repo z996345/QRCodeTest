@@ -4,11 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <title>Test Project</title>
-   
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/qrcode.js/qrcode.js"></script>
+    <script type="text/javascript">
+
+    function createQRCode () {
+
+    	var text = document.getElementById("text").value;
+    	var qrcode = new QRCode(document.getElementById("qrcode"), {
+            text: text,//"http://jindo.dev.naver.com/collie",
+            width: 128,
+            height: 128,
+            colorDark: "#000000",
+            colorLight: "#ffffff",
+            //ref:http://blog.qrstuff.com/2011/12/14/qr-code-error-correction
+            //QRCode.CorrectLevel.{L/M/Q/H}
+            correctLevel: QRCode.CorrectLevel.L
+        });
+        qrcode.clear();
+    }
+    </script>
 </head>
 
 <body>
-    
+    <input id="text" type="text" value='{"id":"s","password":""}'  />
+    <br />
+    <input type="button" value="click" onclick="createQRCode()">
+    <div id="qrcode"></div>
 </body>
 
 </html>
