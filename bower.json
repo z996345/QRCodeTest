@@ -1,0 +1,25 @@
+{
+  "name": "QRCodeTestProject",
+  "main": "index.html",
+  "homepage": "https://github.com/z996345/QRCodeTest",
+  "authors": [
+    "z996345 <z996345@hotmail.com>"
+  ],
+  "description": "Try to create QRCdoe",
+  "moduleType": [],
+  "keywords": [
+    "QRCode"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.2.0",
+    "qrcode.js": "qrcode-js#*"
+  }
+}
